@@ -1,0 +1,68 @@
+<h1>Bienvenido</h1>
+<h5 id="info" class="hidden">vista</h5>
+<h3>Aqui encontrara las opciones para el cargo:</h3>
+
+
+<div class="jumbotron">
+  <h2 id="cargo"><%=cargo() %></h2>
+  <section>
+<p><%= describir() %> </p>
+</section>
+  <p><a class="btn btn-primary btn-lg" href=<%=ruta()%> role="button">Learn more</a></p>
+</div>
+
+
+<!-- Modal -->
+
+<div class="moi">
+		
+	</div>
+
+
+<%= form_tag("inicio/edit", method: "post") do %>
+	<div class="conte">
+		
+	</div>
+	
+	<div class="subm">
+		
+	
+  <%= submit_tag("VOTAR") %>
+  </div>
+
+
+
+<% end %>
+
+
+
+
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+

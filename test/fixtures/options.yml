@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  votos: 1
+  disponible: 1
+  instancia: MyString
+  descripcion: MyText
+
+two:
+  name: MyString
+  votos: 1
+  disponible: 1
+  instancia: MyString
+  descripcion: MyText

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Instancia</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Votos</th>
+      <th>Disponible</th>
+      <th>Descripcion</th>
+      <th>Winner</th>
+      <th>Otherx</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @instancia.each do |instancium| %>
+      <tr>
+        <td><%= instancium.name %></td>
+        <td><%= instancium.votos %></td>
+        <td><%= instancium.disponible %></td>
+        <td><%= instancium.descripcion %></td>
+        <td><%= instancium.winner %></td>
+        <td><%= instancium.otherx %></td>
+        <td><%= link_to 'Show', instancium %></td>
+        <td><%= link_to 'Edit', edit_instancium_path(instancium) %></td>
+        <td><%= link_to 'Destroy', instancium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Instancium', new_instancium_path %>
+<br>
+<br>
+<%= link_to 'Ver opciones', options_path %>

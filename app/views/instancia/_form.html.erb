@@ -1,0 +1,46 @@
+<%= form_for(@instancium) do |f| %>
+  <% if @instancium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@instancium.errors.count, "error") %> prohibited this instancium from being saved:</h2>
+
+      <ul>
+      <% @instancium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :votos %><br>
+    <%= f.number_field :votos %>
+  </div>
+  <div class="field">
+    <%= f.label :disponible %><br>
+
+
+    <%= f.select :disponible, options_for_select( [ ["Disponible ",1],["No disponible", 0]] )%>
+
+
+   
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="field">
+    <%= f.label :winner %><br>
+    <%= f.text_field :winner %>
+  </div>
+  <div class="field">
+    <%= f.label :otherx %><br>
+    <%= f.text_field :otherx %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

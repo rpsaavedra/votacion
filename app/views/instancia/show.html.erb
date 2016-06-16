@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @instancium.name %>
+</p>
+
+<p>
+  <strong>Votos:</strong>
+  <%= @instancium.votos %>
+</p>
+
+<p>
+  <strong>Disponible:</strong>
+  <%= @instancium.disponible %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @instancium.descripcion %>
+</p>
+
+<p>
+  <strong>Winner:</strong>
+  <%= @instancium.winner %>
+</p>
+
+<p>
+  <strong>Otherx:</strong>
+  <%= @instancium.otherx %>
+</p>
+
+<%= link_to 'Edit', edit_instancium_path(@instancium) %> |
+<%= link_to 'Back', instancia_path %>
