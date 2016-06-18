@@ -1,6 +1,9 @@
-<h1>Bienvenido</h1>
+
+
+<div class="page-header">
 <h5 id="info" class="hidden">vista</h5>
-<h3>Aqui encontrara las opciones para el cargo:</h3>
+  <h1>Bienvenido  <br><small>Aquí encontrara las opciones para el cargo</small></h1>
+</div>
 
 
 <div class="jumbotron">
@@ -8,7 +11,7 @@
   <section>
 <p><%= describir() %> </p>
 </section>
-  <p><a class="btn btn-primary btn-lg" href=<%=ruta()%> role="button">Learn more</a></p>
+  <p><a class="btn btn-primary btn-primary center-block" href=<%=ruta()%> role="button">Saber Más</a></p>
 </div>
 
 
@@ -27,7 +30,7 @@
 	<div class="subm">
 		
 	
-  <%= submit_tag("VOTAR") %>
+  <%= submit_tag "VOTAR",  class: "btn btn-default btn-lg" %>
   </div>
 
 
@@ -35,27 +38,6 @@
 <% end %>
 
 
-
-
-<nav>
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
 
 
 

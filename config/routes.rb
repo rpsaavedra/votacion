@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'aresponse/:id' => 'inicio#start'
 
+  get 'cerar' => 'options#cerar'
+
   root "inicio#index"
   resources :instancia
   resources :options

@@ -26,6 +26,42 @@
 
 
  $(function(){
+
+ 	if( $('#info').text() == "options"){
+ 		$prev = $('#cerar');
+
+
+
+
+ 		$prev.on('click', function(ev){
+ 			location.reload();
+ 			
+		url = "cerar";
+
+
+	 	$.ajax({
+				"url": url,
+				"success": function(data, ts, jq){
+
+
+					$magic = $('<div class="alert alert-success" role="alert">SE ceraron!</div>');
+					
+					$('#notice').append($magic);
+					
+					//buildCardInfo(data);
+				},
+				"error": function(jq, st, er) {
+					$magic = $('<div class="alert alert-danger" role="alert">SE ceraron!</div>');
+					
+					$('#notice').append($magic);
+					
+					//console.log("ERROR",  jq, st, er);
+				}
+			});
+
+	 });
+ 		
+ 	}
  	
  	if( $('#info').text() == "vista"){
 

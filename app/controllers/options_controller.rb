@@ -21,6 +21,16 @@ class OptionsController < ApplicationController
   def edit
   end
 
+  def cerar
+    Option.all.each do |op|
+      op.votos=0
+      op.save
+    end
+
+    response = {:promociones => "hola"}
+    render:json => response
+  end
+
   # POST /options
   # POST /options.json
   def create
